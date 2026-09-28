@@ -3141,11 +3141,39 @@
         .portfolio-btn-icon {
             font-size: 13px
         }
+        .llcg-footer {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 999;
+            padding: 10px 16px;
+            text-align: center;
+            font-size: 11px;
+            letter-spacing: 0.04em;
+            color: #c8c8cd;
+            background: rgba(15, 15, 18, 0.8);
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(6px);
+        }
+        
+        .llcg-footer a {
+            color: #00ff9d;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        
+        .llcg-footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
     <div id="root"></div>
+    <div class="llcg-footer">
+  Developed by <a href="https://llcgteam.com" target="_blank" rel="noopener noreferrer">LLCG Team</a>
+</div>
     <script type="text/babel">
         const { useState, useEffect, useRef, useMemo, useCallback } = React;
         const COLORS = ['#4d9fff', '#a78bfa', '#22d3ee', '#00ff9d', '#ff9f43', '#ec4899', '#ff5f5f', '#84cc16'];
